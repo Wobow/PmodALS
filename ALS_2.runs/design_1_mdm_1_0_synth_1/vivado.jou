@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Apr 27 14:26:02 2017
+# Process ID: 16848
+# Current directory: E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.runs/design_1_mdm_1_0_synth_1
+# Command line: vivado.exe -log design_1_mdm_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_mdm_1_0.tcl
+# Log file: E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.runs/design_1_mdm_1_0_synth_1/design_1_mdm_1_0.vds
+# Journal file: E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.runs/design_1_mdm_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source design_1_mdm_1_0.tcl -notrace
