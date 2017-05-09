@@ -49,6 +49,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
@@ -60,8 +61,8 @@ set rc [catch {
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.runs/synth_1/design_1_wrapper.dcp
-  add_files -quiet e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp
-  set_property netlist_only true [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp]
+  add_files -quiet E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp
+  set_property netlist_only true [get_files E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp]
   add_files -quiet e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.dcp
   set_property netlist_only true [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.dcp]
   add_files -quiet e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/design_1_PmodALS_0_0.dcp
@@ -72,8 +73,8 @@ set rc [catch {
   set_property netlist_only true [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.dcp]
   add_files -quiet e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.dcp
   set_property netlist_only true [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0.dcp]
-  add_files -quiet e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp
-  set_property netlist_only true [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp]
+  add_files -quiet E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp
+  set_property netlist_only true [get_files E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0.dcp]
   add_files -quiet e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.dcp
   set_property netlist_only true [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0.dcp]
   add_files -quiet e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0.dcp
@@ -82,8 +83,10 @@ set rc [catch {
   set_property netlist_only true [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.dcp]
   add_files -quiet e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0.dcp
   set_property netlist_only true [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0.dcp]
-  add_files -quiet e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp
-  set_property netlist_only true [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp]
+  add_files -quiet E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp
+  set_property netlist_only true [get_files E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp]
+  add_files -quiet e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp
+  set_property netlist_only true [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.dcp]
   add_files E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/design_1.bmm
   set_property SCOPED_TO_REF design_1 [get_files -all E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/design_1.bmm]
   add_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf
@@ -97,14 +100,14 @@ set rc [catch {
   set_property processing_order EARLY [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc]
   read_xdc -ref design_1_axi_uartlite_0_0 -cells U0 e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc
   set_property processing_order EARLY [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc]
-  read_xdc -prop_thru_buffers -ref design_1_PmodALS_0_0 -cells inst e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/design_1_PmodALS_0_0_board.xdc
-  set_property processing_order EARLY [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/design_1_PmodALS_0_0_board.xdc]
   read_xdc -prop_thru_buffers -ref PmodALS_pmod_bridge_0_0 -cells inst e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/src/PmodALS_pmod_bridge_0_0/PmodALS_pmod_bridge_0_0_board.xdc
   set_property processing_order EARLY [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/src/PmodALS_pmod_bridge_0_0/PmodALS_pmod_bridge_0_0_board.xdc]
   read_xdc -prop_thru_buffers -ref PmodALS_axi_quad_spi_0_0 -cells U0 e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/src/PmodALS_axi_quad_spi_0_0/PmodALS_axi_quad_spi_0_0_board.xdc
   set_property processing_order EARLY [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/src/PmodALS_axi_quad_spi_0_0/PmodALS_axi_quad_spi_0_0_board.xdc]
   read_xdc -ref PmodALS_axi_quad_spi_0_0 -cells U0 e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/src/PmodALS_axi_quad_spi_0_0/PmodALS_axi_quad_spi_0_0.xdc
   set_property processing_order EARLY [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/src/PmodALS_axi_quad_spi_0_0/PmodALS_axi_quad_spi_0_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_1_PmodALS_0_0 -cells inst e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/design_1_PmodALS_0_0_board.xdc
+  set_property processing_order EARLY [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/design_1_PmodALS_0_0_board.xdc]
   read_xdc -ref design_1_microblaze_0_0 -cells U0 e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc
   set_property processing_order EARLY [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]
   read_xdc -ref design_1_dlmb_v10_0 -cells U0 e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0.xdc
@@ -117,6 +120,11 @@ set rc [catch {
   set_property processing_order EARLY [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0_board.xdc]
   read_xdc -ref design_1_rst_clk_wiz_0_100M_0 -cells U0 e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0.xdc
   set_property processing_order EARLY [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_0_100M_0/design_1_rst_clk_wiz_0_100M_0.xdc]
+  read_xdc -prop_thru_buffers -ref design_1_axi_gpio_0_0 -cells U0 e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc
+  set_property processing_order EARLY [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_board.xdc]
+  read_xdc -ref design_1_axi_gpio_0_0 -cells U0 e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc
+  set_property processing_order EARLY [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0.xdc]
+  read_xdc E:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/constrs_1/imports/Tutorial/Basys3_Master.xdc
   read_xdc -ref PmodALS_axi_quad_spi_0_0 -cells U0 e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/src/PmodALS_axi_quad_spi_0_0/PmodALS_axi_quad_spi_0_0_clocks.xdc
   set_property processing_order LATE [get_files e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_PmodALS_0_0/src/PmodALS_axi_quad_spi_0_0/PmodALS_axi_quad_spi_0_0_clocks.xdc]
   link_design -top design_1_wrapper -part xc7a35tcpg236-1

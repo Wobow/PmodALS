@@ -1,0 +1,166 @@
+
+*** Running vivado
+    with args -log design_1_axi_tft_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_tft_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_axi_tft_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 325.797 ; gain = 115.535
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_tft_0_0' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_tft_0_0/synth/design_1_axi_tft_0_0.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'axi_tft' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.vhd:418]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:18317]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_reset' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:14320]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_reset' (5#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:14320]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_cmd_status' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:17014]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_first_stb_offset' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:12489]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_first_stb_offset' (6#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:12489]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_stbs_set' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:6311]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_stbs_set' (7#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:6311]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_cmd_status' (8#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:17014]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_rd_wr_cntlr' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:14917]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_pcc' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:10367]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_strb_gen' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:862]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_strb_gen' (9#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:862]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_strb_gen__parameterized0' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:862]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_strb_gen__parameterized0' (9#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:862]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_pcc' (10#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:10367]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_addr_cntl' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:13242]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_addr_cntl' (11#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:13242]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_rddata_cntl' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:8711]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_rdmux' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:1286]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_rdmux' (12#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:1286]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_rddata_cntl' (13#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:8711]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_rd_status_cntl' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:8106]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_rd_status_cntl' (14#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:8106]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_skid_buf' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:6878]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_skid_buf' (15#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:6878]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_wrdata_cntl' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:4464]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_wrdata_cntl' (16#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:4464]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_wr_status_cntl' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:2919]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_fifo' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:2040]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (17#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (18#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (19#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (20#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_fifo' (21#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:2040]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_fifo__parameterized0' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:2040]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (21#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (21#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (21#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_fifo__parameterized0' (21#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:2040]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_wr_status_cntl' (22#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:2919]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_skid2mm_buf' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:7519]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_wr_demux' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:137]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_wr_demux' (23#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:137]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_skid2mm_buf' (24#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:7519]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_rd_wr_cntlr' (25#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:14917]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_rd_llink' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:16423]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_rd_llink' (26#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:16423]
+INFO: [Synth 8-638] synthesizing module 'axi_master_burst_wr_llink' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:13875]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst_wr_llink' (27#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:13875]
+INFO: [Synth 8-256] done synthesizing module 'axi_master_burst' (28#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/905f/hdl/axi_master_burst_v2_0_vh_rfs.vhd:18317]
+INFO: [Synth 8-638] synthesizing module 'axi_tft_v2_0_15_tft_controller' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.v:2836]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (29#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'FDR' [E:/CSUSM/Xlink/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3951]
+INFO: [Synth 8-256] done synthesizing module 'FDR' (30#1) [E:/CSUSM/Xlink/Vivado/2016.4/scripts/rt/data/unisim_comp.v:3951]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (30#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (30#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized2' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized2' (30#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized3' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized3' (30#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized4' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized4' (30#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized5' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized5' (30#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized6' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized6' (30#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'axi_tft_v2_0_15_slave_register' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.v:1519]
+INFO: [Synth 8-256] done synthesizing module 'axi_tft_v2_0_15_slave_register' (31#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.v:1519]
+INFO: [Synth 8-638] synthesizing module 'axi_tft_v2_0_15_line_buffer' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.v:2114]
+INFO: [Synth 8-638] synthesizing module 'async_fifo_fg' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/5ab6/hdl/lib_fifo_v1_0_rfs.vhd:253]
+INFO: [Synth 8-256] done synthesizing module 'async_fifo_fg' (62#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/5ab6/hdl/lib_fifo_v1_0_rfs.vhd:253]
+INFO: [Synth 8-256] done synthesizing module 'axi_tft_v2_0_15_line_buffer' (63#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.v:2114]
+INFO: [Synth 8-638] synthesizing module 'axi_tft_v2_0_15_h_sync' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.v:2426]
+INFO: [Synth 8-256] done synthesizing module 'axi_tft_v2_0_15_h_sync' (64#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.v:2426]
+INFO: [Synth 8-638] synthesizing module 'axi_tft_v2_0_15_v_sync' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.v:515]
+INFO: [Synth 8-256] done synthesizing module 'axi_tft_v2_0_15_v_sync' (65#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.v:515]
+INFO: [Synth 8-638] synthesizing module 'axi_tft_v2_0_15_tft_interface' [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.v:918]
+INFO: [Synth 8-638] synthesizing module 'ODDR' [E:/CSUSM/Xlink/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25305]
+INFO: [Synth 8-256] done synthesizing module 'ODDR' (66#1) [E:/CSUSM/Xlink/Vivado/2016.4/scripts/rt/data/unisim_comp.v:25305]
+INFO: [Synth 8-638] synthesizing module 'FDS' [E:/CSUSM/Xlink/Vivado/2016.4/scripts/rt/data/unisim_comp.v:4087]
+INFO: [Synth 8-256] done synthesizing module 'FDS' (67#1) [E:/CSUSM/Xlink/Vivado/2016.4/scripts/rt/data/unisim_comp.v:4087]
+INFO: [Synth 8-256] done synthesizing module 'axi_tft_v2_0_15_tft_interface' (68#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.v:918]
+INFO: [Synth 8-256] done synthesizing module 'axi_tft_v2_0_15_tft_controller' (69#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.v:2836]
+INFO: [Synth 8-256] done synthesizing module 'axi_tft' (70#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ipshared/a1ce/hdl/axi_tft_v2_0_rfs.vhd:418]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_tft_0_0' (71#1) [e:/Downloads/Basys3-master/Basys3-master/Projects/GPIO/proj/ALS_2/ALS_2.srcs/sources_1/bd/design_1/ip/design_1_axi_tft_0_0/synth/design_1_axi_tft_0_0.vhd:125]
+Finished RTL Elaboration : Time (s): cpu = 00:01:08 ; elapsed = 00:01:16 . Memory (MB): peak = 560.289 ; gain = 350.027
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:09 ; elapsed = 00:01:16 . Memory (MB): peak = 560.289 ; gain = 350.027
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 687.738 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:01:19 ; elapsed = 00:01:28 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:19 ; elapsed = 00:01:28 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:28 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:23 ; elapsed = 00:01:31 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:39 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:41 ; elapsed = 00:01:51 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished Timing Optimization : Time (s): cpu = 00:01:41 ; elapsed = 00:01:51 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished Technology Mapping : Time (s): cpu = 00:01:42 ; elapsed = 00:01:53 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished IO Insertion : Time (s): cpu = 00:01:43 ; elapsed = 00:01:54 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:43 ; elapsed = 00:01:54 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:01:54 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:01:54 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:43 ; elapsed = 00:01:54 . Memory (MB): peak = 687.738 ; gain = 477.477
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:43 ; elapsed = 00:01:54 . Memory (MB): peak = 687.738 ; gain = 477.477
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    12|
+|2     |LUT1     |    28|
+|3     |LUT2     |   104|
+|4     |LUT3     |   127|
+|5     |LUT4     |    87|
+|6     |LUT5     |   122|
+|7     |LUT6     |   139|
+|8     |MUXCY    |    20|
+|9     |ODDR     |     1|
+|10    |RAMB18E1 |     1|
+|11    |FDCE     |    75|
+|12    |FDPE     |    21|
+|13    |FDR      |   124|
+|14    |FDRE     |   774|
+|15    |FDS      |     2|
+|16    |FDSE     |    31|
++------+---------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:44 ; elapsed = 00:01:54 . Memory (MB): peak = 687.738 ; gain = 477.477
+synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:52 . Memory (MB): peak = 1103.094 ; gain = 862.320
